@@ -40,3 +40,6 @@
 [submodule "bundle/vim-l9"]
 	path = bundle/vim-l9
 	url = https://github.com/vim-scripts/L9.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
