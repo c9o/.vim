@@ -2,6 +2,40 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 Helptags
 
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+"在下面添加你需要安装的插件
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+"在Github仓库的插件
+Plugin 'tpope/vim-fugitive'
+" http://vim-scripts.org/vim/scripts.html网站上的插件直接写插件名称
+Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" 本机目录下的插件
+Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+Plugin 'user/L9', {'name': 'newL9'}
+
+" 所有的插件需要在这一行之前添加
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+
 set guifont=Courier\ 10\ Pitch\ 12 "设置文泉驿等宽微米黑字体
 set nu
 color desert

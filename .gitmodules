@@ -43,3 +43,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "/home/jc46/.vim/bundle/Vundle.vim"]
+	path = /home/jc46/.vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
