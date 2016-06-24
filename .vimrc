@@ -17,18 +17,15 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 "在Github仓库的插件
-Plugin 'tpope/vim-fugitive'
 " http://vim-scripts.org/vim/scripts.html网站上的插件直接写插件名称
 Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " 本机目录下的插件
-Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
-Plugin 'user/L9', {'name': 'newL9'}
+Plugin 'Shougo/neocomplete.vim'
 
 " 所有的插件需要在这一行之前添加
 call vundle#end()            " required
